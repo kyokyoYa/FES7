@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border_radius실습</title>
+  </head>
+  <style>
+    section {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly
+
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+    }
+
+    .a {
+        border-radius: 100px;
+    }
+
+    .b {
+        border-radius: 10px;
+    }
+
+    .c {
+        border-radius: 100px 0 0 0;
+    }
+
+    .d {
+        border-radius: 100px 0 100px 0; 
+        /* 100px 0 */
+    }
+
+    .e {
+        border-radius: 0 50px 0 50px;
+        /* 0 50px */
+    }
+
+    .f {
+        height: 50 px;
+        border-radius: 200px 200px 0 0;
+    }
+
+  </style>
+  <body>
+    <section>    
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+    </section>
+
+
+  </body>
+</html>
