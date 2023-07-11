@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+
+.box {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 140px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0;
+}
+
+.letter {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 15px;
+  font-size: 12px;
+  line-height: 15.02px;
+}
+
+button {
+  width: 318px;
+  height: 40px;
+  background-color: #711bff;
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weniv {
+  width: 64px;
+  height: 18px;
+  margin-right: 3px;
+}
+
+.box-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #767676;
+  padding: 0 15px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+}
+
+.aaa {
+  margin: 0 4px;
+}
+.rock_user {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}

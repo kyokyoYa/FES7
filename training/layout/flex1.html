@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <style>
+      header {
+        background-color: skyblue;
+        height: 100px;
+      }
+
+      section {
+        background-color: salmon;
+        height: 300px;
+      }
+
+      aside {
+        background-color: gold;
+        height: 300px;
+      }
+
+      footer {
+        background-color: slateblue;
+        height: 100px;
+      }
+
+      .a1 {
+        display: flex;
+      }
+
+      .b {
+        flex-grow: 3;
+        flex-basis: 0;
+        
+      }
+
+      .c {
+        flex-grow: 1;
+        flex-basis: 0;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+      <header>header</header>
+      <div class="a1">
+        <section class="b" >section</section>
+        <aside class="c">aside</aside>
+      </div>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>
