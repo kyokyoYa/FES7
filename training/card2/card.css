@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Pretendard-Regular";
+}
+
+.card {
+  width: 288px;
+  height: 374px;
+  background: #fff;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  margin: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.cardHead {
+  display: flex;
+  width: 256px;
+  height: 40px;
+}
+
+.cardHeadImg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.cardHeadLetter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  color: #5a6a72;
+  width: 200px;
+  height: 40px;
+  font-size: 5px;
+}
+
+.cardHeadLetterSpan {
+  display: inline-block;
+  color: #29363d;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+.cardMainImg {
+  display: inline-block;
+  object-fit: cover;
+  width: 288px;
+  height: 196px;
+  margin-bottom: 10px;
+}
+
+.cardMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardMainLetter {
+  width: 256px;
+  height: calc(1em * 1.6 * 2);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #5a6a72;
+}
+
+.cardFooter {
+  width: 256px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+}
+
+.cardFooterOne {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #29363d;
+}
+
+.cardFooterOneSpan {
+  font-weight: 700;
+}
+
+.cardFooterOneSpan::after {
+  display: block;
+  content: "";
+  width: 33px;
+  border-bottom: 2px solid #29363d;
+  margin-top: -1px;
+}
+
+.cardFooterTwo {
+  width: 112px;
+  display: flex;
+  justify-content: space-between;
+}
+.a {
+  width: 32px;
+  height: 32px;
+}
