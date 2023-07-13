@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>버튼 만들기</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main {
+        display: flex;
+        gap: 2em;
+        margin-bottom: 200px;
+      }
+
+      .dis {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+      }
+
+      .a {
+        width: 88px;
+        height: 32px;
+        background-color: #1a202c;
+        color: #cbd5df;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 700;
+        transition: all 2s;
+      }
+
+      .a:hover {
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+        transform: translate(0, 50px) scale(1.2) skew(30deg, 20deg)
+          rotate(1turn);
+      }
+
+      .a:active {
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+      }
+
+      .a:disabled {
+        color: var(--dark-bg-54-a-5568, #4a5568);
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .b {
+        width: 88px;
+        height: 32px;
+        background-color: #1a202c;
+        color: #439aff;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 700;
+        transition: all 2s;
+      }
+
+      .b:hover {
+        background-color: #439aff;
+        border-color: #73b4ff;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+        transform: translate(0, 50px) scale(1.2) skew(30deg, 20deg)
+          rotate(1turn);
+      }
+
+      .b:active {
+        background-color: #439aff;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+      }
+
+      .c {
+        width: 88px;
+        height: 32px;
+        background-color: #1a202c;
+        color: #eb5757;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 700;
+        transition: all 2s;
+      }
+
+      .c:hover {
+        background-color: #eb5757;
+        border-color: #fd6f6f;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+        transform: translate(0, 50px) scale(1.2) skew(30deg, 20deg)
+          rotate(1turn);
+      }
+
+      .c:active {
+        background-color: #eb5757;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="dis">
+        <button class="a">Button</button>
+        <button class="a" disabled>Button</button>
+      </div>
+      <button class="b">Yes</button>
+      <button class="c">Del</button>
+      <button class="d"></button>
+    </div>
+  </body>
+</html>

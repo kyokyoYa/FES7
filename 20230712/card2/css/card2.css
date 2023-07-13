@@ -1,15 +1,15 @@
 /* font */
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
-    format('woff');
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Pretendard-Bold';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff')
-    format('woff');
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -48,7 +48,7 @@ li {
 
 /* 실습 */
 body {
-  font-family: 'Pretendard-Regular', sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
 }
 .card {
   width: 288px;
@@ -76,7 +76,7 @@ body {
 
 /* 공통속성 */
 .fwb {
-  font-family: 'Pretendard-Bold';
+  font-family: "Pretendard-Bold";
   color: #29363d;
 }
 .small-font {
@@ -122,7 +122,7 @@ body {
 }
 
 .read::after {
-  content: '';
+  content: "";
   display: block;
 
   width: 4px;
