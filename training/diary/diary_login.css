@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Pretendard-Regular";
+}
+
+/* img 요소에 vertical-align: top;을 적용하면, 해당 이미지의 상단이 부모 요소의 상단에 맞추어지게 됩니다. 이는 이미지가 포함된 컨테이너의 높이가 이미지의 높이보다 큰 경우, 이미지가 컨테이너의 상단에 위치하게 만들어주는 데 도움이 됩니다. */
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+body {
+  background-color: #fffaf0;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.max-width {
+  width: 1284px;
+  max-width: 100%;
+  max-width: calc(100% - 20%);
+  margin: auto;
+}
+
+.header .max-width {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header.max-width {
+  width: 1284px;
+  max-width: 100%;
+  max-width: calc(100% - 60px);
+  margin: auto;
+}
+
+.header h1 {
+  width: 156px;
+  height: 75px;
+}
+
+.login_a {
+  display: block;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  color: var(--text-2, #5a6a72);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.login_a img {
+  width: 32px;
+  height: 32px;
+  margin-right: 3px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 img {
+  width: 249.6px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.pp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65px;
+  color: var(--text-1, #29363d);
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 2px solid pink;
+  box-shadow: 0 -0.5em 0 pink inset;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 22px;
+}
+
+label {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-1, #29363d);
+}
+
+input {
+  width: 392px;
+  height: 48px;
+  border-radius: 4px 4px 0px 0px;
+  border: 1px solid white;
+  border-bottom: 1px solid var(--text-3, #677880);
+  background: #fff;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+button {
+  display: block;
+  color: var(--bg-gray, #f4f5f5);
+  font-size: 16px;
+  font-weight: 700;
+  width: 392px;
+  height: 48px;
+  flex-shrink: 0;
+  background: var(--text-1, #29363d);
+  border-radius: 4px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: var(--text-3, #677880);
+  font-size: 12px;
+  font-weight: 400;
+}

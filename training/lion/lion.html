@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사자 애니메이션</title>
+  </head>
+  <style>
+    div {
+      width: 168px;
+      height: 200px;
+      background: url(../images/keyframes-licat.png) no-repeat 0 0 / auto 100%;
+      animation: movemove 0.8s infinite steps(6);
+    }
+
+    @keyframes movemove {
+      to {
+        background-position: right 0;
+      }
+    }
+  </style>
+  <body>
+    <div class="lion"></div>
+  </body>
+</html>
+
+<!-- steps에서 s를 빼서 코드를 작성했는데 애니메이션이 적용안됨! 주의하자. -->
