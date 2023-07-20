@@ -1,0 +1,418 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard-Regular";
+}
+
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+img {
+  display: block;
+}
+
+button:enabled {
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------- */
+
+body {
+  background-color: #fffaf0;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.max-width {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1284px;
+  max-width: calc(100% - 60px);
+  margin: auto;
+  height: 120px;
+}
+
+.logoutBox {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.logoutBox p {
+  font-size: 16px;
+  color: var(--text-1, #29363d);
+}
+
+.logoutBox p::after {
+  content: "|";
+  margin-left: 15px;
+}
+
+.logoutBox span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-1, #29363d);
+  box-shadow: 0 -0.5em 0 pink inset;
+}
+
+.logoutBox button {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 115px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  color: var(--text-2, #5a6a72);
+  margin-left: 15px;
+}
+
+.logoutBox button img {
+  margin-right: 2px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 0.55fr 1fr;
+  width: 1284px;
+  max-width: calc(100% - 60px);
+  margin: auto;
+  gap: 40px;
+  min-height: 100vh;
+}
+
+.diaryform {
+  border-right: 1px solid red;
+}
+
+.diaryform form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 62px;
+}
+
+.diaryform form p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-1, #29363d);
+}
+
+.diaryform form img {
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+.diaryform form input:nth-of-type(1) {
+  display: block;
+  width: 92%;
+  height: 48px;
+  border-radius: 4px 4px 0px 0px;
+  border: none;
+  border-bottom: 1px solid var(--text-3, #677880);
+  background: #fff;
+  text-indent: 10px;
+}
+
+.diaryform form input:nth-of-type(2) {
+  display: block;
+  width: 92%;
+  height: 360px;
+  border-radius: 4px;
+  border: 1px solid var(--text-3, #677880);
+  background: #fff;
+  background: #fff;
+  text-indent: 10px;
+  padding-bottom: 310px;
+}
+
+input::placeholder {
+  color: var(--text-3, #677880);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.diaryform form button {
+  width: 92%;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  background: var(--text-1, #29363d);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bg-gray, #f4f5f5);
+  text-align: center;
+}
+
+.diaryPost {
+  grid-template-rows: auto 1fr auto;
+}
+
+.diaryPost ol {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 67px;
+}
+
+.diaryPost li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 55px 30px 30px 30px;
+  width: 100%;
+  height: 287px;
+  border-top: 4px solid var(--text-3, #677880);
+  border-right: 1px solid var(--text-3, #677880);
+  border-bottom: 1px solid var(--text-3, #677880);
+  border-left: 1px solid var(--text-3, #677880);
+}
+
+.diaryPost li::before {
+  position: absolute;
+  content: url(./img/“”.png);
+  top: -13%;
+  left: 5%;
+  transform: translateY(50%);
+  background-color: #fffaf0;
+  z-index: 100;
+}
+
+.diaryPost li::after {
+  position: absolute;
+  content: url(./img/quote-end.png);
+  bottom: 0%;
+  right: 5%;
+  transform: translateY(50%);
+  background-color: #fffaf0;
+}
+
+li .diaryTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  padding-right: 5px;
+}
+
+li .diaryTitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid black;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.diary-article header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #677880;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.diaryTitle h3 {
+  color: var(--text-1, #29363d);
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.diaryTitle time {
+  color: var(--text-3, #677880);
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+li p {
+  overflow: hidden;
+  font-size: 14px;
+  color: var(--text-2, #5a6a72);
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  line-height: 140%; /* 19.6px */
+}
+
+@media (max-width: 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 1284px;
+    max-width: calc(100% - 20%);
+    margin: auto;
+  }
+
+  .diaryform {
+    border-right: none;
+  }
+
+  .diaryPost {
+    margin-bottom: 10%;
+  }
+
+  .diaryform form input:nth-of-type(1) {
+    width: 100%;
+  }
+  .diaryform form input:nth-of-type(2) {
+    width: 100%;
+  }
+  .diaryform form button {
+    width: 100%;
+  }
+}
