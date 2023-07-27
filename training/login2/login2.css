@@ -132,7 +132,7 @@ body {
   margin-right: 5px;
 }
 
-#chk:checked + label div::after {
+#chk:checked + label .box::after {
   display: block;
   content: "";
   width: 22px;
