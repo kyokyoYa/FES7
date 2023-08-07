@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forest Zoo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      background: url(./images/bg.png);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wraper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 7%;
+    }
+
+    .eagle {
+      /* top: 30%; */
+      width: 300px;
+      height: 300px;
+      background-color: red;
+      background: url(./images/animal06.png) no-repeat 0 0 / auto;
+    }
+
+    .box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 300px;
+      background-color: rgb(144, 84, 6);
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0px 9px 1px 0.1px rgb(55, 32, 3);
+    }
+
+    .letter_box {
+      position: absolute;
+      top: 40px;
+      padding: 0 20px;
+    }
+
+    .box h1 {
+      color: white;
+    }
+
+    .box p {
+      width: 270px;
+      position: absolute;
+      top: 55px;
+      color: rgb(166, 162, 156);
+    }
+  </style>
+  <body>
+    <div class="wraper">
+      <div class="eagle"></div>
+      <div class="box">
+        <img src="./images/green.png" alt="잔디" />
+        <div class="letter_box">
+          <h1>eagle</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+            Illo,assumenda quibusdam error incidunt debitis praesentium, harum
+            eaquequos rem deleniti esse ducimus numquam sint Id facilis
+            architecto nulla alias excepturi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
